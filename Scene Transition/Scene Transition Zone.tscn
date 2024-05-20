@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpy3vt28t4g31"]
+
+[ext_resource type="Script" path="res://Scene Transition/SceneTransitionZone.cs" id="1_tvy1n"]
+[ext_resource type="Texture2D" uid="uid://c2ynd2w6dprv8" path="res://icon.svg" id="2_yyf4t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jjq3p"]
+size = Vector2(121, 125)
+
+[node name="Area2D - Transition Zone" type="Area2D"]
+script = ExtResource("1_tvy1n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, -0.5)
+shape = SubResource("RectangleShape2D_jjq3p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_yyf4t")

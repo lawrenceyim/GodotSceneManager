@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7tw464isfe0u"]
+
+[ext_resource type="PackedScene" uid="uid://dpy3vt28t4g31" path="res://Scene Transition/Scene Transition Zone.tscn" id="1_blkxe"]
+[ext_resource type="PackedScene" uid="uid://b2blaf2bdypir" path="res://Test Prefabs/PlayerPrefab.tscn" id="3_cn8bt"]
+
+[node name="Scene 1" type="Node2D"]
+
+[node name="Area2D - Transition Zone" parent="." instance=ExtResource("1_blkxe")]
+position = Vector2(1012, 5)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_cn8bt")]
